@@ -1,10 +1,6 @@
 import streamlit as st
 
-def CarregaDashboard():
-    # chama função carregando o json com os links das bases de dados
-    from LoadLinksJson import CarregarLinksJson
-    links = CarregarLinksJson()
-
+def CarregaDashboard(links):
     # busca no dicionario o link das ocorrencias csv
     link_ocorrencias_csv = next(item for item in links if item["nome"] == "Base CSV")
 
