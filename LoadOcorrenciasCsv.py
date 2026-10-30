@@ -14,8 +14,6 @@ def CarregarOcorrenciasCsv(link):
     return pd.read_csv(BytesIO(resposta.content), sep=",", encoding="utf-8-sig")
 
 """
-url_teste = "https://camilalimentos-my.sharepoint.com/:x:/g/personal/antonio_cneto_camil_com_br/IQCt9d3LMjEhSIC9fPzF-RmpAVaJczDLWfmjQuDI9oXgZgA?e=e14xra&download=1"
-
 dados_teste = CarregarOcorrenciasCsv(url_teste)
 st.dataframe(dados_teste)
 """
